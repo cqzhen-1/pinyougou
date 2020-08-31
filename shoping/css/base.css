@@ -1,0 +1,87 @@
+/*将所有标签的内外边距清0*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* css盒子模型：width=padding+border+内容 */
+}
+
+
+/*斜体的文字不倾斜*/
+
+em,
+i {
+    font-style: normal;
+}
+
+
+/*去掉li的小圆点*/
+
+li {
+    list-style: none;
+}
+
+img {
+    border: 0;
+    /*照顾低版本浏览器，如果图片外面包含了链接，会有边框的问题*/
+    vertical-align: middle;
+    /*解决图片底部有空白缝隙的问题*/
+}
+
+
+/*当鼠标经过按钮时改变样式*/
+
+button {
+    cursor: pointer;
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #c81623;
+}
+
+button,
+input {
+    font-family: Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
+    border: 0;
+    /* 去除默认的灰色边框*/
+    outline: 0;
+    /*去除蓝色边框*/
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    /*抗锯齿性，让文字更加清晰*/
+    background-color: #fff;
+    /* \5B8B\4F53是宋体的Unicode编码，这样浏览器的兼容性较好*/
+    font: 12px/1.5 Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
+    color: #666;
+}
+
+.hide,
+.none {
+    display: none;
+}
+
+
+/*after伪元素清除浮动*/
+
+.clearfix:after {
+    visibility: hidden;
+    clear: both;
+    display: block;
+    content: ".";
+    height: 0;
+}
+
+
+/* 照顾ie6 7 浏览器 */
+
+.clearfix {
+    *zoom: 1;
+}

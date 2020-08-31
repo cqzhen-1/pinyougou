@@ -1,0 +1,106 @@
+/*列表页专有css*/
+.nav{
+    overflow: hidden;
+}
+.sk{
+    position: absolute;
+    left: 190px;
+    top: 40px;
+    padding-left: 14px;
+    padding-top: 3px;
+    border-left: 1px solid #c81523;
+}
+.sk_list{
+    float: left;
+}
+.sk_list ul li{
+    float: left;
+}
+.sk_list ul li a{
+    display: block;
+    padding: 0px 30px;
+    height: 47px;
+    line-height: 47px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #000;
+}
+.sk_con{
+    float: left;
+}
+.sk_con ul li{
+    float: left;
+}
+.sk_con ul li a{
+    display: block;
+    line-height: 49px;  /*行高大于高度，文字偏下*/  /*会溢出2px，将其隐藏*/
+    padding: 0 20px;
+    font-size: 14px;
+}
+.sk_con ul li:last-child a::after{
+    content: '\e69b';
+    font-family: iconfont;
+}
+.sk_bd{
+    margin-top: 25px;
+    font-size: 14px;
+}
+.sk_bd ul li{
+    margin-right: 13.3px;
+    float: left;
+    width: 290px;
+    height: 474px;
+    border: 1px solid transparent;
+}
+.sk_bd ul li:hover{
+    border: 1px solid #c81523;
+}
+.sk_bd ul li:nth-child(4n){
+    margin-right: 0;
+}
+.sk_bd ul li img{
+    width: 287px;
+    height: 270px;
+}
+.sk_bd ul li p{
+    color: #666;
+    margin: 27px 0 18px 0;
+}
+.sk_bd ul li .span1{
+    font-size: 22px;
+    color: #ff0000;
+}
+.sk_bd ul li .span2{
+    color: #ccc;
+    text-decoration: line-through;
+    margin-left: 8px;
+}
+.last{
+    font-size: 20px;
+    width: 289px;
+    height: 46px;
+    line-height: 50px;
+    text-align: center;
+    margin-top: 14px;
+    color: #fff;
+    background-color: #c81523;
+}
+.bar{
+    vertical-align: middle;
+    display: inline-block;
+    width: 150px;
+    height: 15px;
+    border: 1px solid #ff3333;
+    border-radius: 7px;
+}
+.bar-in{
+    vertical-align: top;
+    display: inline-block;
+    width: 87%;
+    height: 100%;
+    border-radius: 7px;
+    background-color: red;
+}
+.sk_bd ul li .span3{
+    font-size: 16px;
+}

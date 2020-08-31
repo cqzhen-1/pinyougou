@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            /* css盒子模型：width=padding+border+内容 */
+        }
+        /* div {
+          position: relative;
+          width: 100px;
+          height: 100px;
+          background-color: pink;
+      } */
+        
+        p {
+            width: 50px;
+            height: 50px;
+            background-color: green;
+            /* 子盒子水平垂直居中 */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -25px auto auto -25px;
+            text-align: center;
+            padding-top: 13px;
+        }
+        
+        #left {
+            background-color: #f00;
+            float: left;
+            width: 100px;
+            height: 500px;
+        }
+        
+        #right-fix {
+            float: right;
+            width: 100%;
+            margin-left: -100px;
+            /*正值大于或等于#left的宽度,才能显示在同一行*/
+        }
+        
+        #right {
+            margin-left: 100px;
+            /*大于或等于#left的宽度*/
+            background-color: #0f0;
+            height: 500px;
+        }
+        
+        .BFC {
+            overflow: hidden;
+        }
+        
+        .left {
+            background: #73de80;
+            /* 绿色 */
+            opacity: 0.5;
+            width: 0;
+            height: 0;
+            border-bottom: 50px solid #f00;
+            border-top: 50px solid transparent;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            float: left;
+        }
+        
+        .right {
+            /* 粉色 */
+            background: #ef5be2;
+            /* opacity: 0.5; */
+            width: 300px;
+            min-height: 100px;
+        }
+        
+        .box {
+            background: #ccc;
+            height: 100%;
+            margin-left: 50px;
+        }
+        
+        .little {
+            background: #fff;
+            width: 50px;
+            height: 50px;
+            margin: 10px;
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div>
+        <p>123</p>
+    </div> -->
+    <!-- <div id="left">左列定宽</div>
+    <div id="right-fix">
+        <div id="right">右列自适应</div>
+    </div> -->
+
+    <div class="box BFC">
+        <div class="left"></div>
+        <div class="right BFC">
+            <div class="little"></div>
+            <div class="little"></div>
+            <div class="little"></div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,131 @@
+/*.w{*/
+/*    margin: 0 auto;*/
+/*    width: 1200px;*/
+/*}*/
+body{
+    width: 1920px;
+}
+header{
+    height: 84px;
+    margin-left: 360px;
+}
+.logo{
+    padding-top: 18px; /*用margin会有外边距塌陷问题？*/
+}
+
+.loginarea{
+    height: 486px;
+    background: url("../images/loginbg.png") no-repeat;
+}
+.loginbox{
+    display: inline-block;
+    height: 362px;
+    width: 380px;
+    margin-top: 62px;
+    margin-left: 1067px;
+    background-color: #fff;
+}
+.loginbox_hd{
+    width: 380px;
+    height: 43px;
+}
+.loginbox_hd span{
+    display: inline-block;
+    width: 73px;
+    height: 18px;
+    line-height: 18px;
+    font-size: 18px;
+}
+.loginbox_hd>div{
+    display: inline-block;
+    height: 20px;
+    width: 1px;
+    margin-top: 18px;
+    background-color: #ccc;
+}
+.span1{
+    margin: 18px 69px 2px 47px;
+}
+.span2{
+    color: #c81523;
+    margin:  18px 0 2px 69px;
+}
+
+.loginbox_bd{
+    height: 180px;
+    width: 343px;
+    margin-left: 37px;
+}
+.loginbox_bd ul li{
+    width: 303px;
+    height: 36px;
+    margin-bottom: 17px;
+}
+.loginbox_bd>div{
+    width: 303px;
+    height: 26px;
+    line-height: 26px;
+    background-color: #ffffcc;
+    border: 1px solid  #cccc99;
+    padding-left: 10px;
+    margin: 20px 0 10px 0px;
+    font-size: 12px;
+}
+.loginbox_bd input{
+    display: inline-block;
+    width: 264px;
+    height: 34px;
+    padding-left: 10px;
+}
+.username {
+    border: 1px solid #3399cc;
+}
+.username input{
+    margin-left: -4px;
+}
+.username>img{
+    height: 34px;
+    margin-top: -4px;
+}
+.pwd {
+    border: 1px solid #999;
+}
+.pwd input{
+    margin-left: -4px;
+}
+.pwd>img{
+    height: 34px;
+    margin-top: -4px;
+}
+.cb{
+    color: #ccc;
+}
+.cb input{
+    width: 12px;
+    height: 12px;
+    vertical-align: middle;
+}
+
+.loginbox_footer{
+    height: 34px;
+    margin-left: 20px;
+    margin-top: 60px;
+}
+.loginbox_footer a{
+    color:#006699;
+    font-size: 14px;
+}
+
+.mod_copyright{
+    text-align: center;
+    padding-top: 20px;
+}
+.mod_copyright .links{
+    padding-bottom: 15px;
+}
+.mod_copyright .links a{
+    margin: 0 4px;
+}
+.mod_copyright .copyright{
+    line-height: 20px;
+}
